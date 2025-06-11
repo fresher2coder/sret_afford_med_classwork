@@ -13,11 +13,24 @@ function MovieForm() {
       ...prevMovie,
       [event.target.name]: event.target.value,
     }));
-    console.log(movie);
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Movie submitted:", movie);
+
+    //add the movie to the movies array
+
+    setMovie({
+      title: "",
+      year: "",
+      genre: "",
+      watched: false,
+      favorite: false,
+    });
   };
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit}>
         <section>
           <label>Title:</label>
           <input
