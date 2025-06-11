@@ -14,6 +14,9 @@ function NavBar() {
         <li>
           <NavLink to="/stats">Stats</NavLink>
         </li>
+        <li>
+          <NavLink to="/counter">Counter</NavLink>
+        </li>
       </ul>
     </nav>
   );

@@ -7,12 +7,12 @@ import Stats from "../pages/Stats";
 function MainLayout({ children }) {
   return (
     // NavBar (Home Fav Stats)
-    <div>
+    <>
       <NavBar />
       {/* dynamic content */}
       {/* home fav stat  */}
       {children}
-    </div>
+    </>
   );
 }
 
