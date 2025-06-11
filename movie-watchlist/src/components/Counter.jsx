@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 
 function Counter(props) {
-  console.log(props);
+  console.log(props); //immutable object
+  // props.incrementValue = 10; //not allowed, props are immutable
   const { initialValue, incrementValue } = props;
-  const [count, setCount] = useState(initialValue);
+  const [count, setCount] = useState(initialValue); //mutable state
   const increment = () => {
     setCount((prevCount) => prevCount + incrementValue);
     console.log(count); //11
   };
+  const decrement = () => {
+    setCount((prevCount) => prevCount - incrementValue);
+    console.log(count); //11
+  };
   return (
     <>
-      <h1>Counter</h1>
-      <button onClick={increment}>Increment: {count}</button>
+      <h1>Counter: {count}</h1>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
     </>
   );
 }

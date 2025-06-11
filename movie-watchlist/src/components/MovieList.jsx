@@ -1,14 +1,10 @@
 import React from "react";
 import { useMovie } from "../contexts/MovieContext";
 
-function Stats() {
+function MovieList() {
   const { movies } = useMovie();
   console.log(movies);
-  return (
-    <>
-      <h1>Stats</h1>
-    </>
-  );
+  return <div>MovieList</div>;
 }
 
-export default Stats;
+export default MovieList;

@@ -18,8 +18,12 @@ function AppRouter() {
             <Route path="/favorite" element={<Favorite />} />
             <Route path="/stats" element={<Stats />} />
             <Route
-              path="/counter"
-              element={<Counter initialValue={0} incrementValue={5} />}
+              path="/counter1"
+              element={<Counter initialValue={1} incrementValue={1} />}
+            />
+            <Route
+              path="/counter5"
+              element={<Counter initialValue={5} incrementValue={5} />}
             />
           </Routes>
         </MainLayout>

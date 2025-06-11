@@ -15,7 +15,10 @@ function NavBar() {
           <NavLink to="/stats">Stats</NavLink>
         </li>
         <li>
-          <NavLink to="/counter">Counter</NavLink>
+          <NavLink to="/counter1">Counter 1x</NavLink>
+        </li>
+        <li>
+          <NavLink to="/counter5">Counter 5x</NavLink>
         </li>
       </ul>
     </nav>
