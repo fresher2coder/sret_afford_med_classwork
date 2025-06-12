@@ -1,0 +1,73 @@
+/* General App Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Users Section */
+#users {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  justify-content: center;
+  background-color: #f0f4f8;
+}
+
+/* Individual User Profile Card */
+#user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#user-profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Text inside the User Profile */
+#user-profile h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+#user-profile p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #555;
+}
+
+/* Responsive tweaks (optional) */
+@media (max-width: 480px) {
+  #user-profile {
+    padding: 20px;
+  }
+
+  #user-profile h2 {
+    font-size: 1.25rem;
+  }
+
+  #user-profile p {
+    font-size: 0.95rem;
+  }
+}
